@@ -1,0 +1,494 @@
+<html>
+
+<head>
+    <script src="index.js" defer></script>
+    <title>Welcome To Info</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .nav {
+            height: 10vh;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.274);
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+            transition: all 3s ease-in-out;
+        }
+
+        .box1 {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 150px;
+            font-size: 10px;
+            padding: 2px 4px;
+            border: 7px groove black;
+            background: tan;
+            border-radius: 10px;
+            box-sizing: border-box;
+            transition: all 1s ease-in-out;
+        }
+
+        .box2 {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 150px;
+            font-size: 10px;
+            padding: 2px 4px;
+            border: 7px groove black;
+            background: tan;
+            border-radius: 10px;
+            box-sizing: border-box;
+            transition: all 1s ease-in-out;
+        }
+
+        .box3 {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 150px;
+            font-size: 10px;
+            padding: 2px 4px;
+            border: 7px groove black;
+            background: tan;
+            border-radius: 10px;
+            box-sizing: border-box;
+            transition: all 1s ease-in-out;
+        }
+
+        .box4 {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 150px;
+            font-size: 10px;
+            padding: 2px 4px;
+            border: 7px groove black;
+            background: tan;
+            border-radius: 10px;
+            box-sizing: border-box;
+            transition: all 1s ease-in-out;
+        }
+
+        .box5 {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 150px;
+            font-size: 10px;
+            padding: 2px 4px;
+            border: 7px groove black;
+            background: tan;
+            border-radius: 10px;
+            box-sizing: border-box;
+            transition: all 1s ease-in-out;
+        }
+
+        .box6 {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 150px;
+            font-size: 10px;
+            padding: 2px 4px;
+            border: 7px groove black;
+            background: tan;
+            border-radius: 10px;
+            box-sizing: border-box;
+            transition: all 1s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .box1:hover {
+            background: rgb(234, 0, 255);
+            color: rgb(239, 255, 8);
+            border-radius: 2px;
+            border: 4px solid green;
+        }
+
+        .box2:hover {
+            background: rgb(234, 0, 255);
+            color: rgb(239, 255, 8);
+            border-radius: 2px;
+            border: 4px solid green;
+        }
+
+        .box3:hover {
+            background: rgb(234, 0, 255);
+            color: rgb(239, 255, 8);
+            border-radius: 2px;
+            border: 4px solid green;
+        }
+
+        .box4:hover {
+            background: rgb(234, 0, 255);
+            color: rgb(239, 255, 8);
+            border-radius: 2px;
+            border: 4px solid green;
+        }
+
+        .box5:hover {
+            background: rgb(234, 0, 255);
+            color: rgb(239, 255, 8);
+            border-radius: 2px;
+            border: 4px solid green;
+        }
+
+        .box6:hover {
+            background: rgb(234, 0, 255);
+            color: rgb(239, 255, 8);
+            border-radius: 2px;
+            border: 4px solid green;
+        }
+
+        .nav:hover {
+            background: rgba(255, 0, 0, 0.52);
+
+        }
+
+        .cth {
+            height: 50px;
+            width: 100%;
+            background: pink;
+            margin-top: 20px;
+            text-transform: uppercase;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cth ul {
+            list-style: square;
+            font-size: 33px;
+            font-family: 'Ramaraja', serif;
+            font-weight: 800;
+        }
+
+        .cth ul:hover {
+            font-weight: 900;
+            color: blueviolet;
+            cursor: alias;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100%;
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        table {
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .fth {
+            height: 50px;
+            width: 100%;
+            background: pink;
+            margin-top: 20px;
+            text-transform: uppercase;
+            align-items: center;
+            font-size: 33px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .fth:hover {
+            font-weight: 900;
+            color: blueviolet;
+            cursor: alias;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        tr:nth-child(odd) {
+            background: rgba(22, 22, 22, 0);
+        }
+
+        tr:nth-child(even) {
+            background: rgba(112, 112, 112, 0.774)
+        }
+
+        .footer {
+            height: 150vh;
+            width: 100%;
+            background: rgb(55, 176, 180);
+            display: flex;
+        }
+
+        input {
+            width: 500px;
+            height: 27px;
+            padding: 13px 9px;
+            font-size: 13px;
+            font-family: system-ui;
+            font-weight: 500;
+            margin: 5px 10px;
+        }
+
+        select {
+            margin: 5px 10px;
+            width: 97px;
+            height: 28px;
+        }
+
+        label {
+            font-size: 20px;
+            font-family: 'Titillium Web', sans-serif;
+            padding: 2px 10px;
+        }
+
+        .btnn {
+            width: 191px;
+            height: 44px;
+            background: rgba(0, 0, 255, 0.466);
+            color: white;
+            border-radius: 10px;
+
+        }
+
+        .onei {
+            width: 20px;
+            height: 15px;
+        }
+
+        .fouri {
+            width: 20px;
+            height: 15px;
+        }
+
+        .threei {
+            width: 100px;
+            height: 15px;
+        }
+
+        .twoi {
+            width: 100px;
+            height: 15px;
+        }
+
+        .fil {
+            height: 40px;
+        }
+
+        .for {
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <div class="box1">
+                <h1>Open Source</h1>
+            </div>
+            <div class="box2">
+                <h1>Software</h1>
+            </div>
+            <div class="box3">
+                <h1>Creat Company</h1>
+            </div>
+            <div class="box4">
+                <h1>Syber Security</h1>
+            </div>
+            <div class="box5">
+                <h1>Frontand Web</h1>
+            </div>
+            <div class="box6">
+                <h1>Backand Web</h1>
+            </div>
+        </div>
+
+        <div class="cth">
+            <ul>
+                <li>
+                    company Info
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <table border="0" width="70%">
+                <tr>
+                    <td colspan="3" bgcolor="#3394D5">Company Name : Softweb & Database Managment System Pvt.ltd</td>
+                </tr>
+                <tr>
+                    <td>
+                        since
+                    </td>
+                    <td>
+                        SoftWeb
+                    </td>
+                    <td>
+                        The Company Was Incorporated On 1 April,2001
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PartnerShip
+                    </td>
+                    <td>
+                        Ayush Patel & Roy Patel
+                    </td>
+                    <td>
+                        Investment:Rs.75 Lac
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Company Name:SoftWab
+                    </td>
+                    <td>
+                        Company Add:Ghandhinagar<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;GiftCity [Main Branch]
+
+                    </td>
+                    <td>
+                        Company Work:WebDevlop
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Others country:U.K
+                    </td>
+                    <td>
+                        Company Name:Webx
+                    </td>
+                    <td>
+                        Investment:1.5cr
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Others country:A.U.S
+                    </td>
+                    <td>
+                        Company Name:Frotnandworks
+                    </td>
+                    <td>
+                        Investment:3.3cr
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Others country:U.S.A
+                    </td>
+                    <td>
+                        Company Name:DatasystemFroweb
+                    </td>
+                    <td>
+                        Investment:4cr
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Others country:U.A.E
+                    </td>
+                    <td>
+                        Company Name:Aratech
+                    </td>
+                    <td>
+                        Investment:17cr
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Others country:Ukrain
+                    </td>
+                    <td>
+                        Company Name:banda
+                    </td>
+                    <td>
+                        Investment:11cr
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Others country:Spain
+                    </td>
+                    <td>
+                        Company Name:Siderios
+                    </td>
+                    <td>
+                        Investment:5cr
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="fth">
+            <ul>
+                <li>
+                    Registration
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="footer">
+        <div class="for">
+            <label>Name</label><br><input type="name" value="" placeholder="Enter Your Name" /><br><br>
+            <label>Gender</label><br><input class="onei" type="radio" name="gender" id="male" /><label
+                for="Male">Male</label><input class="fouri" type="radio" name="gender" id="female" /><label
+                for="Female">Female</label><br><br>
+            <label>Password</label><br><input type="password" value="" placeholder="Enter Your Password" /><br><br>
+            <label>Age</label><br><input type="number" name="number" max="100" min="0"
+                placeholder="Enter Your Age" /><br><br>
+            <label>Phone Number</label><br><input type="number" name="number"
+                placeholder="Enter Your Phone Number" /><br><br>
+            <label>Company Name</label><br><input type="text" name="text"
+                placeholder="Enter Apply For Company Name" /><br><br>
+            <label>Select Country</label><br><select>
+                <option>India</option>
+                <option>U.K</option>
+                <option>Ukrain</option>
+                <option>Spain</option>
+                <option>UAE</option>
+                <option>U.S.A</option>
+                <option>A.U.S</option>
+            </select><br><br>
+            <label>Date</label><br><input class="twoi" type="date" /><br><br>
+            <label>Time</label><br><input class="threei" type="time" /><br><br>
+            <label>Upload Your Resume</label><br><input class="fil" type="file" id="myfile" name="myfile"><br><br>
+            <label for="email">Enter your email</label><br><input type="email" id="email" name="email"
+                placeholder="Enter Your Email  i'd"><br><br><input class="btnn" type="submit" value="Submit"><br><br>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

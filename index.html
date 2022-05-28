@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <script src="index.js" defer></script>
+    <title>Profile Web Page</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .sidebaar {
+            height: 100vh;
+            width: 22%;
+            background: red;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        li {
+            list-style: none;
+            font-size: 30px;
+            font-family: cursive;
+            font-weight: 650;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 55px;
+            text-transform: uppercase;
+            position: relative;
+            top: 100px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            transition: all 2s ease-out;
+        }
+
+        ul li a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .navbar {
+            height: 12vh;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.459);
+            box-shadow: -1px 8px 8px black;
+            display: flex;
+
+
+        }
+
+        svg {
+            width: 35px;
+            margin-left: 20px;
+        }
+
+        h1 {
+            margin-top: 37px;
+            margin-left: 20px;
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            transition: all 1s ease-in-out;
+        }
+
+        h1:hover {
+            color: rgba(0, 9, 128, 0.746);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .bk {
+            height: 100vh;
+            width: 78%;
+            background: whitesmoke;
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pic {
+            height: 550px;
+            width: 80%;
+            background: white;
+            box-shadow: 1px 1px 20px 4px black;
+            box-sizing: border-box;
+
+        }
+
+        .pic img {
+            height: 360px;
+            position: absolute;
+            left: 64%;
+            top: 25%;
+            float: right;
+        }
+
+        .minside {
+            height: 100%;
+            width: 49%;
+            justify-content: center;
+            background: none;
+            float: left;
+        }
+
+        .minside h2 {
+            font-size: 66px;
+            font-family: Berlin Sans FB;
+            font-weight: 100;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .minside h3 a {
+            font-size: 20px;
+            font-family: Bell MT;
+            font-weight: 600;
+
+        }
+
+        h3 {
+            margin-bottom: 7px;
+        }
+
+        .minside h5 {
+            font-size: 20px;
+            color: black;
+            margin-bottom: 4px;
+        }
+
+        .txt {
+            margin-top: 200px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="sidebaar">
+            <div class="navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z" />
+                </svg>
+                <h1>Ayush Patel</h1>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="info.html">Info</a></li>
+
+            </ul>
+        </div>
+        <div class="bk">
+            <div class="pic">
+                <img src="picc.jfif" />
+                <div class="minside">
+                    <div class="txt">
+                        <h2>Ayush Patel</h2>
+                        <h3><a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">ayush14604@gmail.com</a></h3>
+                        <h5>I'm Web Devloper</h5>
+                        <h6> Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Iusto eveniet itaque accusamus voluptatem magni facilis! Veritatis sint,
+                            optio maxime reiciendis, incidunt sequi.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
